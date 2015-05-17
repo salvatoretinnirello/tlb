@@ -1,0 +1,103 @@
+html { height: 100% } /* le viewport, c'est la zone de visualisation du navigateur. Or les balises block qui prennent 100% de height se réfère au parent. Ici body n'a pas d eparent donc c'est pas 100%; Pour cela on ajoute que html a une hauteur de 100 car le parent de html c'est le viewport ^^ */
+
+body {
+	background-color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+a {
+	text-decoration: none; /* pas de surligne dans les liens*/
+}
+
+a:visited {
+	color: #6980B2;
+}
+
+a:hover{
+	color: #625448;
+}
+
+img:hover {
+	opacity: 0.1 ;
+
+}
+
+h1 {
+	font-family: sans-serif; /* serif c'est police avec des barres aux extremites des lettres (Times par ex). Sans serif c'est sans barres(Arial par ex.). */
+	color: #5D776C;
+}
+
+h2 {
+	font-family: sans-serif; 
+	color: #5D776C;
+
+}
+
+section#fondateurs {
+	
+	padding-top: 20px;
+	padding-left: 20px ;
+	margin: 50px;
+	border: 2px solid;
+	border-radius: 20px;
+	box-shadow: 0 5px 5px #260407;
+	background-color: #CEC6C1;
+			
+}
+
+section#philosophie {
+	
+	padding-bottom: 150px; /* le padding du bas est de la même hauteur que le footer pour éviter que la section main ne puisse recouvrir le footer puisque celui-ci est fixe (absolute) */
+	padding-left: 20px ;
+					
+}
+
+footer {
+	height: 100px;
+	border-top: 2px solid;
+	min-width: 100% ;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding-left: 20px ;
+	padding-top: 20px;
+	background-color: #383F5B; /* la position absolute permet de dire que l'élément ne sera pas un élément de flux mais sera positionné de manière fixe. Sauf que par défaut le fixe est en haut à gauche. Or ici, je force pour dire en bas à gauche avec le bottom et le left. */
+	color: white;
+}
+/* ici l'objectif est de simplement contenir tous les éméents et de dire que la page ne pourra pas faire moins que 100% de la hauteur disponible */
+#main_wrapper{
+
+	position:relative;
+	min-height: 100%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#fondateurs li {
+
+	padding: 5px;
+}
+
+.nav-custom	{ /* je crée ici une classe pour personnaliser la nav bootsrap  */
+
+	background-color: #383F5B ;
+	line-height: 50px;
+
+}
+
+.nav-custom a:hover, a:active {
+
+	opacity: 0.7;
+}
+
+.nav-custom a:active, a:focus {
+
+	background-color: #383F5B ;
+}
+

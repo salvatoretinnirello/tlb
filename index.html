@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700' rel='stylesheet' type='text/css'>
-    
+  
     <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -23,19 +23,44 @@
   </head>
   <body>
     <div id="main_wrapper">
-
-      <nav class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <ul class="nav nav-pills nav-custom">
-              <li role="presentation"><a href="#">Home</a></li>
-              <li role="presentation"><a href="#">Profile</a></li>
-              <li role="presentation"><a href="#">Messages</a></li>
-            </ul>
+      <nav class="navbar navbar-default container">
+        <div class="container-fluid row">
+        <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <!-- Cela crée un boutton avec trois traits quand la fenetre du navigateur est très petite. On groupe le brand avec pour avoir toujours le logo société même si en très petit -->
+            <button type="button" class="navbar-toggle collapsed col-md-6" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                          
+            <a class="navbar-brand col-md-6" href="http://www.salvatoretinnirello.be" target="_blank"><img src="images/TLB_brand.png" alt="TLB Management"></a>
           </div>
-        </div>
-      </nav>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse col-md-12" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Partners<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Myriam Lallemand</a></li>
+                  <li><a href="#">Sylvain Briol</a></li>
+                  <li><a href="#">Salvatore Tinnirello</a></li>
+                  <!-- li class="divider"></li>
+                  <li><a href="#">Separated link</a></li -->
+                </ul>
+              </li>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Contactez-nous</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+        
       <section class="container" id="fondateurs">
         <div class="row">
           <div class="col-md-12">
@@ -81,9 +106,9 @@
 
         <div class="row">
 
-          <div class="col-xs-6">Suivez-nous</div>
+          <div class="col-md-6">Suivez-nous</div>
           
-          <div class="col-xs-6">
+          <div class="col-md-6">
           &copy; Salvatore Tinnirello - 2015 - <a href="credit/credit.html">Credits</a>
           </div>
 
